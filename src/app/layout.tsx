@@ -13,16 +13,55 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://victorgotfrid.com"),
   title: "Victor Gotfrid — Product & Web Designer",
   description: "Portfólio de Victor Gotfrid. Design de produto, interfaces no Figma, engenharia de software full-stack e direção de arte.",
-  keywords: ["Product Designer", "Web Designer", "Creative Technologist", "React", "Next.js", "TypeScript", "Python", "PostgreSQL", "Tailwind CSS", "Figma", "Victor Gotfrid"],
+  keywords: [
+    "Product Designer",
+    "Web Designer",
+    "Design Engineer",
+    "Creative Technologist",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Python",
+    "PostgreSQL",
+    "Tailwind CSS",
+    "Figma",
+    "Three.js",
+    "Victor Gotfrid"
+  ],
   authors: [{ name: "Victor Gotfrid", url: "https://github.com/victorgrcabral" }],
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.svg", type: "image/svg+xml" }
+    ],
+    apple: "/icon.svg",
+  },
   openGraph: {
     title: "Victor Gotfrid — Product & Web Designer",
     description: "Bridging full-stack software engineering with high-impact art direction and product design.",
-    type: "website",
+    url: "https://victorgotfrid.com",
+    siteName: "Victor Gotfrid — Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Victor Gotfrid — Product & Web Designer",
+      },
+    ],
     locale: "pt_BR",
-  }
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Victor Gotfrid — Product & Web Designer",
+    description: "Bridging full-stack software engineering with high-impact art direction and product design.",
+    images: ["/og-image.png"],
+    creator: "@victorgrcabral",
+  },
 };
 
 export default function RootLayout({
