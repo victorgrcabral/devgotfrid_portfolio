@@ -18,7 +18,7 @@
 [![Cloudflare Pages](https://img.shields.io/badge/Cloudflare-Edge_SSG-05181D?style=for-the-badge&logo=cloudflarepages&logoColor=F38020&labelColor=082229)](https://pages.cloudflare.com)
 
 <p align="center">
-  <em>Concepção e engenharia de produtos digitais de ponta a ponta — integrando design de interface centrado no usuário, direção de arte refinada, física 3D e arquitetura de software full-stack de alta performance.</em>
+  <em>End-to-end digital product conception and design engineering — bridging user-centric interface design, high-impact art direction, interactive 3D physics, and high-performance full-stack software architecture.</em>
 </p>
 
 </div>
@@ -30,113 +30,113 @@
 ```typescript
 const VictorGotfrid = {
   role: "Product & Web Designer / Design Engineer",
-  location: "São Paulo, SP — Brasil",
+  location: "São Paulo, SP — Brazil",
   education: [
-    "Publicidade e Propaganda — Universidade Presbiteriana Mackenzie",
-    "Análise e Desenvolvimento de Sistemas — Centro Universitário Senac"
+    "Bachelor of Advertising & Marketing — Universidade Presbiteriana Mackenzie",
+    "Systems Analysis & Software Development — Centro Universitário Senac"
   ],
   stack: {
-    design: ["Figma", "Design Systems", "UI/UX", "Direção de Arte", "Prototipagem Interativa"],
-    frontend: ["React 19", "Next.js 16 (App Router)", "TypeScript", "Tailwind CSS 4", "Three.js / Canvas"],
+    design: ["Figma", "Design Systems", "UI/UX", "Art Direction", "Interactive Prototyping"],
+    frontend: ["React 19", "Next.js 16 (App Router)", "TypeScript", "Tailwind CSS 4", "Three.js / HTML5 Canvas"],
     backend: ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "REST APIs", "WebSockets"],
     ai_tooling: ["Codex", "Antigravity IDE", "Claude Code", "Cloudflare Agents SDK", "DeepSeek", "Kimi"]
   },
   live_domain: "https://victorgotfrid.com",
-  status: "Open to Work • Disponível para Novos Desafios"
+  status: "Open to Work • Available for Worldwide Opportunities"
 };
 ```
 
 ---
 
-## 🌌 Destaques de Design Engineering & Interatividade
+## 🌌 Design Engineering & Interactive Highlights
 
 ```
-┌─ EXPERIÊNCIA VISUAL & FÍSICA INTERATIVA ──────────────────────────────────────────┐
+┌─ INTERACTIVE VISUAL EXPERIENCE & PHYSICS ─────────────────────────────────────────┐
 │                                                                                    │
 │  ✦ Dynamic Fisheye Canvas Grid                                                     │
-│    Grid técnico em HTML5 Canvas com distorção matemática de lente fisheye em      │
-│    tempo real ao passar o mouse e spotlight radial profundo.                       │
+│    Lightweight HTML5 Canvas rendering a technical coordinate grid with real-time   │
+│    radial fisheye lens distortion and radiant background spotlight on cursor move. │
 │                                                                                    │
 │  ✦ Concentric Precision Custom Cursor                                              │
-│    Cursor magnético concêntrico de alta precisão substituindo o mouse do sistema, │
-│    com expansão reativa e iluminação ciano (#73D1E0) em elementos interativos.    │
+│    Hardware-accelerated concentric magnetic cursor replacing the system pointer,   │
+│    featuring reactive expansion and cyan (#73D1E0) glowing over interactive items. │
 │                                                                                    │
 │  ✦ Frosted Glassmorphism 3D Monolith                                               │
-│    Card monólito em perspectiva 3D giroscópica com reflexos especulares e vidro    │
-│    jateado translúcido com backdrop-blur.                                          │
+│    Multi-axis gyro/mouse parallax 3D card with authentic specular reflections and  │
+│    translucent frosted glass backdrop-blur.                                        │
 │                                                                                    │
 │  ✦ Fluid Headline Magnetism                                                        │
-│    Distorção magnética letra a letra com repulsão fluida nos títulos sem quebra    │
-│    de palavras no meio.                                                            │
+│    Character-by-character fluid magnetic repulsion and chromatic highlight glow    │
+│    without breaking mid-word line layouts.                                         │
 │                                                                                    │
 │  ✦ Creative Vertical Interactive Timeline                                          │
-│    Trajetória profissional em timeline vertical iluminada com nós neon numerados. │
+│    Career journey structured as an illuminated vertical timeline with neon nodes.  │
 │                                                                                    │
-│  ✦ Dropdown Accordion Form com Disparo Direto                                      │
-│    Formulário expansível com animação baseada em física (CSS Grid 0fr -> 1fr) e    │
-│    entrega assíncrona direta no e-mail victorgrcabral@gmail.com.                   │
+│  ✦ Physics-Driven Dropdown Accordion Contact Form                                 │
+│    Expandable form powered by CSS Grid physics (0fr -> 1fr) with asynchronous      │
+│    direct dispatch to victorgrcabral@gmail.com.                                    │
 │                                                                                    │
 └────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 📂 Cases de Estudo & Repertório Completo
+## 📂 Featured Case Studies & Portfolio Showcase
 
-Cada projeto conta com uma página dedicada de estudo de caso, detalhando o problema, contexto, decisões de arquitetura e direção de arte:
+Every project includes a dedicated case study page breaking down problem statements, product context, architecture decisions, and art direction:
 
-| Projeto | Categoria | Destaques Técnicos & Criativos |
+| Project | Category | Technical & Creative Highlights |
 | :--- | :--- | :--- |
-| **[bidbento.lol](https://bidbento.lol)** | `Software & Produto` | Plataforma de leilão em tempo real, Next.js 15 App Router, FastAPI backend, PostgreSQL, WebSockets ao vivo e mascote animado em loop. |
-| **INTERFUSÃO** | `Web Design & React` | Plataforma institucional para multinacional de mineração, com mapa 3D dotted matrix interativo de presença global em 5 continentes. |
-| **Clínica Muricy** | `Web Design & React` | Interface de autoridade médica, design system com paleta cirúrgica e alta densidade de conversão. |
-| **NERDY CLOTHING** | `Branding & Design` | Apresentação contínua sem emendas (*seamless strip*) com 17 pranchas visuais e tipografia urbana autoral. |
-| **Djasco Headshop** | `Branding & Design` | Galeria em Bento Grid equilibrada, design de embalagens, linha de vestuário e identidade lifestyle. |
-| **SOCIAL HYPE** | `Social Media` | Sistema visual para carrosséis de alto engajamento no Instagram com grid editorial. |
-| **Buona Notte Hostel** | `Branding & Design` | Identidade visual de hospitalidade, sinalização ambiental e aplicações físicas. |
+| **[bidbento.lol](https://bidbento.lol)** | `Software & Product` | Real-time auction & proportional visual visibility platform, Next.js 15 App Router, FastAPI backend, PostgreSQL, live WebSockets, and looping animated mascot. |
+| **INTERFUSÃO** | `Web Design & React` | Global corporate platform for mining conglomerate featuring an interactive 3D dotted matrix world map spanning operations across 5 continents. |
+| **Clínica Muricy** | `Web Design & React` | Medical authority interface, conversion-focused design system with surgical precision aesthetics. |
+| **NERDY CLOTHING** | `Branding & Design` | Seamless continuous visual storytelling strip with 17 editorial artboards and custom urban typography. |
+| **Djasco Headshop** | `Branding & Design` | Balanced Bento Grid gallery, packaging design, merchandise line, and lifestyle brand identity. |
+| **SOCIAL HYPE** | `Social Media` | Visual system for high-engagement Instagram carousels and editorial feed grids. |
+| **Buona Notte Hostel** | `Branding & Design` | Hospitality brand identity, environmental signage, and physical applications. |
 
 ---
 
-## 🛡️ Performance & Segurança de Borda (Cloudflare Edge)
+## 🛡️ Edge Performance & Security Hardening (Cloudflare Edge)
 
-O projeto foi construído para atingir pontuação máxima em Core Web Vitals e conformidade estrita de segurança:
+Engineered for perfect Core Web Vitals scores and strict security posture:
 
 ```
-┌─ BENCHMARK DE PRODUÇÃO ───────────────────────────────────────────────────────────┐
+┌─ PRODUCTION BENCHMARKS ────────────────────────────────────────────────────────────┐
 │                                                                                    │
-│  ⚡ Latência de Borda (TTFB): 9ms (Anycast Cloudflare Edge via GRU / São Paulo)    │
-│  ⚡ Protocolo: HTTP/3 (QUIC) sobre TLS 1.3                                         │
-│  ⚡ Otimização de Assets: 156 imagens em WebP (Economia de mais de 66 MB)          │
-│  ⚡ Caching Imutável: Cache-Control public, max-age=31536000, immutable            │
-│  ⚡ Segurança: HSTS (1 ano), CSP, X-Frame-Options SAMEORIGIN, Permissions-Policy   │
+│  ⚡ Edge Latency (TTFB): 9ms (Anycast Cloudflare Edge via GRU / São Paulo)          │
+│  ⚡ Protocol: HTTP/3 (QUIC) over TLS 1.3                                           │
+│  ⚡ Asset Optimization: 156 WebP images (>66 MB bandwidth saved)                   │
+│  ⚡ Immutable Caching: Cache-Control public, max-age=31536000, immutable           │
+│  ⚡ Security Posture: HSTS (1 year), CSP, X-Frame-Options SAMEORIGIN, Perm-Policy   │
 │                                                                                    │
 └────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🛠️ Instalação & Execução Local
+## 🛠️ Local Development & Build
 
 ```bash
-# 1. Clonar o repositório
+# 1. Clone the repository
 git clone https://github.com/victorgrcabral/devgotfrid_portfolio.git
 cd devgotfrid_portfolio
 
-# 2. Instalar dependências
+# 2. Install dependencies
 npm install
 
-# 3. Iniciar servidor de desenvolvimento local
+# 3. Start local development server
 npm run dev
-# Acesse http://localhost:3000
+# Open http://localhost:3000
 
-# 4. Build de exportação estática (Cloudflare Pages)
+# 4. Build for static export (Cloudflare Pages)
 npm run build
-# Gera a pasta /out 100% estática pronta para deploy
+# Generates 100% pre-rendered static output in /out directory
 ```
 
 ---
 
-## 📬 Conexões & Contato
+## 📬 Connect & Contact
 
 <div align="center">
 
@@ -145,6 +145,6 @@ npm run build
 [![GitHub](https://img.shields.io/badge/victorgrcabral-05181D?style=for-the-badge&logo=github&logoColor=73D1E0&labelColor=082229)](https://github.com/victorgrcabral)
 [![Email](https://img.shields.io/badge/victorgrcabral@gmail.com-05181D?style=for-the-badge&logo=gmail&logoColor=73D1E0&labelColor=082229)](mailto:victorgrcabral@gmail.com)
 
-<sub>Desenvolvido com precisão artesanal por **Victor Gotfrid** • 2026</sub>
+<sub>Crafted with engineering precision & art direction by **Victor Gotfrid** • 2026</sub>
 
 </div>
