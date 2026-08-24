@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-base: #05181D;
+  --color-surface-glass: rgba(8, 34, 41, 0.85);
+  --color-surface-elevated: rgba(11, 42, 50, 0.9);
+  --color-surface-hover: rgba(18, 56, 66, 0.95);
+  --color-border-glass: #003338;
+  --color-border-subtle: #003338;
+  --color-border-strong: #00595B;
+  --color-text-primary: #F7F7F8;
+  --color-text-secondary: #8EACB4;
+  --color-text-muted: #5C7B83;
+  --color-accent-teal: #358A90;
+  --color-accent-aqua: #73D1E0;
+  --color-accent-deep: #00595B;
+}
+
+:root {
+  --background: #05181D;
+  --foreground: #F7F7F8;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+  background-color: #05181D;
+}
+
+body {
+  background-color: #05181D;
+  color: #F7F7F8;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Replace OS cursor with custom precision cursor on desktop */
+@media (hover: hover) and (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
+}
+
+::selection {
+  background-color: #73D1E0;
+  color: #05181D;
+}
+
+/* Minimal dark teal scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #05181D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #003338;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #358A90;
+}
+
+/* Glassmorphism panels */
+.glass-panel {
+  background: rgba(8, 34, 41, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid #003338;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel:hover {
+  border-color: #00595B;
+  background: rgba(11, 42, 50, 0.85);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Authentic Frosted Glass Hero 3D Card */
+.glass-hero-monolith {
+  background: rgba(8, 34, 41, 0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(115, 209, 224, 0.2);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7), inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+}
+
+/* Floating mascot animation in looping */
+@keyframes mascot-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1.5deg);
+  }
+}
+
+.animate-mascot-float {
+  animation: mascot-float 3.5s ease-in-out infinite;
+}
+
+/* Monospace badge */
+.tech-badge {
+  font-family: var(--font-geist-mono), monospace;
+  letter-spacing: -0.02em;
+}
+
+/* Print styles for CV mode */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+  }
+  .no-print,
+  nav,
+  footer {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
