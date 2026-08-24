@@ -19,7 +19,7 @@ export default function BidBentoSpotlight({ project, dict, lang }: BidBentoSpotl
   const isPt = lang === 'pt';
 
   return (
-    <section id="bidbento" className="relative z-10 py-20 border-t border-[#003338] bg-transparent">
+    <section id="bidbento" className="relative z-10 py-20 border-t border-[#003338] bg-transparent scroll-mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="mb-10">

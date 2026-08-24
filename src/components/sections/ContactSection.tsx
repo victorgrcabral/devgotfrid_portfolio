@@ -76,7 +76,7 @@ export default function ContactSection({ dict, lang }: ContactSectionProps) {
   };
 
   return (
-    <section id="contact" className="relative z-10 py-24 border-t border-[#003338] bg-transparent">
+    <section id="contact" className="relative z-10 py-24 border-t border-[#003338] bg-transparent scroll-mt-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">

@@ -19,7 +19,7 @@ export default function ExperienceSection({
   const isPt = lang === 'pt';
 
   return (
-    <section id="experience" className="relative z-10 py-24 border-t border-[#003338] bg-transparent">
+    <section id="experience" className="relative z-10 py-24 border-t border-[#003338] bg-transparent scroll-mt-16">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="mb-16 text-center max-w-2xl mx-auto">

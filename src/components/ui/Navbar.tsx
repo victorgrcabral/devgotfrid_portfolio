@@ -27,19 +27,38 @@ export default function Navbar({ dict, lang }: NavbarProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const navItems = [
+    { targetId: '#bidbento', label: dict.nav.projects },
+    { targetId: '#skills', label: dict.nav.skills },
+    { targetId: '#experience', label: dict.nav.experience },
+    { targetId: '#contact', label: dict.nav.contact },
+  ];
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    if (pathname === `/${lang}` || pathname === `/${lang}/` || pathname === '/') {
+      e.preventDefault();
+      const el = document.querySelector(targetId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        window.history.pushState(null, '', `/${lang}${targetId}`);
+      }
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-200 ${
         isScrolled
-          ? 'bg-[#05181D]/90 backdrop-blur-md border-b border-[#003338] shadow-lg shadow-black/40 py-3'
-          : 'bg-transparent py-5'
+          ? 'bg-[#05181D]/90 backdrop-blur-md border-b border-[#003338] shadow-lg shadow-black/40 py-2.5'
+          : 'bg-transparent py-4'
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Brandmark / Persona — Links to top anchor (#about) */}
         <Link
           href={`/${lang}#about`}
-          className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#73D1E0] rounded"
+          onClick={(e) => handleNavClick(e, '#about')}
+          className="flex items-center gap-3 p-1.5 -ml-1.5 rounded-xl hover:bg-[#082229]/60 transition-colors group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#73D1E0]"
           title={dict.nav.about}
         >
           <div className="w-9 h-9 rounded-xl bg-[#082229] border border-[#00595B]/40 flex items-center justify-center group-hover:border-[#73D1E0]/60 transition-colors shadow-inner shrink-0">
@@ -61,28 +80,26 @@ export default function Navbar({ dict, lang }: NavbarProps) {
           </div>
         </Link>
 
-        {/* Streamlined Desktop Navigation Links (Projetos links to #bidbento, first project) */}
-        <nav className="hidden md:flex items-center gap-7 text-xs font-medium text-[#8EACB4]">
-          <Link href={`/${lang}#bidbento`} className="hover:text-white transition-colors">
-            {dict.nav.projects}
-          </Link>
-          <Link href={`/${lang}#skills`} className="hover:text-white transition-colors">
-            {dict.nav.skills}
-          </Link>
-          <Link href={`/${lang}#experience`} className="hover:text-white transition-colors">
-            {dict.nav.experience}
-          </Link>
-          <Link href={`/${lang}#contact`} className="hover:text-white transition-colors">
-            {dict.nav.contact}
-          </Link>
+        {/* Generous Click Area Desktop Navigation Links */}
+        <nav className="hidden md:flex items-center gap-2 text-xs font-medium text-[#8EACB4]">
+          {navItems.map((item) => (
+            <Link
+              key={item.targetId}
+              href={`/${lang}${item.targetId}`}
+              onClick={(e) => handleNavClick(e, item.targetId)}
+              className="px-3.5 py-2 rounded-lg hover:text-[#F7F7F8] hover:bg-[#082229] border border-transparent hover:border-[#00595B]/50 transition-all cursor-pointer select-none"
+            >
+              {item.label}
+            </Link>
+          ))}
         </nav>
 
         {/* Right Actions: Language Switcher & Clean Resume Button */}
-        <div className="hidden sm:flex items-center gap-3">
+        <div className="hidden sm:flex items-center gap-2.5">
           {/* Language Switch */}
           <Link
             href={targetPath}
-            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono bg-[#082229] hover:bg-[#0B2A32] text-[#8EACB4] hover:text-[#F7F7F8] border border-[#003338] transition-colors"
+            className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-mono bg-[#082229] hover:bg-[#0B2A32] text-[#8EACB4] hover:text-[#F7F7F8] border border-[#003338] hover:border-[#00595B] transition-colors"
             title="Switch language"
           >
             <Globe className="w-3.5 h-3.5 text-[#73D1E0]" />
@@ -97,7 +114,7 @@ export default function Navbar({ dict, lang }: NavbarProps) {
             target="_blank"
             rel="noopener noreferrer"
             download
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-[#0B2A32] hover:bg-[#0F3742] text-[#F7F7F8] border border-[#00595B] hover:border-[#73D1E0]/50 transition-all shadow-sm"
+            className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-medium bg-[#0B2A32] hover:bg-[#0F3742] text-[#F7F7F8] border border-[#00595B] hover:border-[#73D1E0]/50 transition-all shadow-sm"
           >
             <FileText className="w-3.5 h-3.5 text-[#73D1E0]" />
             <span>{dict.nav.resumeButton}</span>
@@ -108,13 +125,13 @@ export default function Navbar({ dict, lang }: NavbarProps) {
         <div className="flex md:hidden items-center gap-2">
           <Link
             href={targetPath}
-            className="p-2 rounded-lg text-xs font-mono bg-[#082229] text-[#8EACB4] border border-[#003338]"
+            className="px-2.5 py-2 rounded-lg text-xs font-mono bg-[#082229] text-[#8EACB4] border border-[#003338]"
           >
             {nextLang.toUpperCase()}
           </Link>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 rounded-lg bg-[#082229] text-[#8EACB4] hover:text-[#F7F7F8] border border-[#003338]"
+            className="p-2 rounded-lg bg-[#082229] text-[#8EACB4] hover:text-[#F7F7F8] border border-[#003338] cursor-pointer"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -124,36 +141,21 @@ export default function Navbar({ dict, lang }: NavbarProps) {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#05181D]/98 border-b border-[#003338] px-6 py-5 space-y-4 shadow-xl">
-          <nav className="flex flex-col space-y-3 text-sm font-medium text-[#8EACB4]">
-            <Link
-              href={`/${lang}#bidbento`}
-              onClick={() => setMobileMenuOpen(false)}
-              className="hover:text-white"
-            >
-              {dict.nav.projects}
-            </Link>
-            <Link
-              href={`/${lang}#skills`}
-              onClick={() => setMobileMenuOpen(false)}
-              className="hover:text-white"
-            >
-              {dict.nav.skills}
-            </Link>
-            <Link
-              href={`/${lang}#experience`}
-              onClick={() => setMobileMenuOpen(false)}
-              className="hover:text-white"
-            >
-              {dict.nav.experience}
-            </Link>
-            <Link
-              href={`/${lang}#contact`}
-              onClick={() => setMobileMenuOpen(false)}
-              className="hover:text-white"
-            >
-              {dict.nav.contact}
-            </Link>
+        <div className="md:hidden bg-[#05181D]/98 backdrop-blur-md border-b border-[#003338] px-6 py-5 space-y-3 shadow-xl">
+          <nav className="flex flex-col space-y-1.5 text-sm font-medium text-[#8EACB4]">
+            {navItems.map((item) => (
+              <Link
+                key={item.targetId}
+                href={`/${lang}${item.targetId}`}
+                onClick={(e) => {
+                  setMobileMenuOpen(false);
+                  handleNavClick(e, item.targetId);
+                }}
+                className="px-3.5 py-2.5 rounded-lg hover:text-white hover:bg-[#082229] border border-transparent hover:border-[#00595B]/40 transition-colors"
+              >
+                {item.label}
+              </Link>
+            ))}
           </nav>
           <div className="pt-3 border-t border-[#003338]">
             <a
@@ -161,7 +163,7 @@ export default function Navbar({ dict, lang }: NavbarProps) {
               target="_blank"
               rel="noopener noreferrer"
               download
-              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-xs font-medium bg-[#0B2A32] text-[#F7F7F8] border border-[#00595B]"
+              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-xs font-medium bg-[#0B2A32] hover:bg-[#0F3742] text-[#F7F7F8] border border-[#00595B]"
             >
               <FileText className="w-4 h-4 text-[#73D1E0]" />
               <span>{dict.nav.resumeButton} (PDF)</span>
