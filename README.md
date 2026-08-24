@@ -1,97 +1,150 @@
-# Victor Gotfrid — Product & Web Designer • Portfolio
-
 <div align="center">
 
-![Next.js](https://img.shields.io/badge/Next.js%2016-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![React 19](https://img.shields.io/badge/React%2019-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Cloudflare Pages](https://img.shields.io/badge/Cloudflare_Pages-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
+```
+   __   _      __               ____       __   ____      _      __
+  / /  (_)____/ /_____  _____  / __/______/ /__/ __/_____(_)____/ /
+ / _ \/ / __/ // / __ \/ ___/ / _// __/ _  / // _// __/ / / __  / 
+/_//_/_/\__/\_,_/\____/_/    /_/ /_/  \_,_/_(_)__/_/ /_/_/\_,_/  
+```
 
-**[victorgotfrid.com](https://victorgotfrid.com)** • **[Live Preview (Cloudflare Pages)](https://victorgotfrid.pages.dev)**
+# Victor Gotfrid
+### **Product & Web Designer • Design Engineer**
+
+[![Website](https://img.shields.io/badge/Production-victorgotfrid.com-05181D?style=for-the-badge&logo=cloudflare&logoColor=73D1E0&labelColor=082229)](https://victorgotfrid.com)
+[![Next.js 16](https://img.shields.io/badge/Next.js-16.3-05181D?style=for-the-badge&logo=nextdotjs&logoColor=F7F7F8&labelColor=082229)](https://nextjs.org)
+[![React 19](https://img.shields.io/badge/React-19.2-05181D?style=for-the-badge&logo=react&logoColor=73D1E0&labelColor=082229)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-05181D?style=for-the-badge&logo=typescript&logoColor=73D1E0&labelColor=082229)](https://www.typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS_v4-05181D?style=for-the-badge&logo=tailwindcss&logoColor=73D1E0&labelColor=082229)](https://tailwindcss.com)
+[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare-Edge_SSG-05181D?style=for-the-badge&logo=cloudflarepages&logoColor=F38020&labelColor=082229)](https://pages.cloudflare.com)
 
 <p align="center">
-  <em>High-performance design engineering portfolio bridging full-stack software architecture with high-impact art direction, interactive 3D physics, and product design.</em>
+  <em>Concepção e engenharia de produtos digitais de ponta a ponta — integrando design de interface centrado no usuário, direção de arte refinada, física 3D e arquitetura de software full-stack de alta performance.</em>
 </p>
 
 </div>
 
 ---
 
-## ✦ Key Highlights & Engineering Features
+## ⚡ Terminal Persona
 
-### 🌌 Interactive 3D & Canvas Background
-- **Dynamic Fisheye Canvas Grid**: Lightweight HTML5 Canvas rendering a technical coordinate grid with real-time radial fisheye lens distortion and radiant spotlight illumination.
-- **Concentric Precision Custom Cursor**: Smooth, hardware-accelerated cursor replacing the OS mouse with reactive magnetic expansion over interactive targets.
-- **Frosted Glassmorphism 3D Monolith**: Multi-axis gyro/mouse parallax card with authentic specular reflections and translucency.
-- **Fluid Headline Magnetism**: Character-by-character repulsion and chromatic glowing highlight on section titles without breaking mid-word layout.
+```typescript
+const VictorGotfrid = {
+  role: "Product & Web Designer / Design Engineer",
+  location: "São Paulo, SP — Brasil",
+  education: [
+    "Publicidade e Propaganda — Universidade Presbiteriana Mackenzie",
+    "Análise e Desenvolvimento de Sistemas — Centro Universitário Senac"
+  ],
+  stack: {
+    design: ["Figma", "Design Systems", "UI/UX", "Direção de Arte", "Prototipagem Interativa"],
+    frontend: ["React 19", "Next.js 16 (App Router)", "TypeScript", "Tailwind CSS 4", "Three.js / Canvas"],
+    backend: ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "REST APIs", "WebSockets"],
+    ai_tooling: ["Codex", "Antigravity IDE", "Claude Code", "Cloudflare Agents SDK", "DeepSeek", "Kimi"]
+  },
+  live_domain: "https://victorgotfrid.com",
+  status: "Open to Work • Disponível para Novos Desafios"
+};
+```
 
 ---
 
-## 📂 Project Showcase & Case Studies
+## 🌌 Destaques de Design Engineering & Interatividade
 
-| Case Study | Category | Focus Areas |
+```
+┌─ EXPERIÊNCIA VISUAL & FÍSICA INTERATIVA ──────────────────────────────────────────┐
+│                                                                                    │
+│  ✦ Dynamic Fisheye Canvas Grid                                                     │
+│    Grid técnico em HTML5 Canvas com distorção matemática de lente fisheye em      │
+│    tempo real ao passar o mouse e spotlight radial profundo.                       │
+│                                                                                    │
+│  ✦ Concentric Precision Custom Cursor                                              │
+│    Cursor magnético concêntrico de alta precisão substituindo o mouse do sistema, │
+│    com expansão reativa e iluminação ciano (#73D1E0) em elementos interativos.    │
+│                                                                                    │
+│  ✦ Frosted Glassmorphism 3D Monolith                                               │
+│    Card monólito em perspectiva 3D giroscópica com reflexos especulares e vidro    │
+│    jateado translúcido com backdrop-blur.                                          │
+│                                                                                    │
+│  ✦ Fluid Headline Magnetism                                                        │
+│    Distorção magnética letra a letra com repulsão fluida nos títulos sem quebra    │
+│    de palavras no meio.                                                            │
+│                                                                                    │
+│  ✦ Creative Vertical Interactive Timeline                                          │
+│    Trajetória profissional em timeline vertical iluminada com nós neon numerados. │
+│                                                                                    │
+│  ✦ Dropdown Accordion Form com Disparo Direto                                      │
+│    Formulário expansível com animação baseada em física (CSS Grid 0fr -> 1fr) e    │
+│    entrega assíncrona direta no e-mail victorgrcabral@gmail.com.                   │
+│                                                                                    │
+└────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📂 Cases de Estudo & Repertório Completo
+
+Cada projeto conta com uma página dedicada de estudo de caso, detalhando o problema, contexto, decisões de arquitetura e direção de arte:
+
+| Projeto | Categoria | Destaques Técnicos & Criativos |
 | :--- | :--- | :--- |
-| **[bidbento.lol](https://bidbento.lol)** | `Software & Produto` | Real-time auction system, Next.js App Router, FastAPI backend, PostgreSQL, live WebSockets |
-| **INTERFUSÃO** | `Web & Design` | Global mining operations platform, interactive 3D dotted world matrix map, enterprise UX |
-| **Clínica Muricy** | `Web & Design` | Medical authority interface, conversion-focused design system, high-contrast aesthetics |
-| **NERDY CLOTHING** | `Branding & Design` | Seamless continuous visual storytelling strip, streetwear brand identity, custom typography |
-| **Djasco Headshop** | `Branding & Design` | Balanced Bento Grid gallery, packaging design, merchandise, lifestyle branding |
-| **SOCIAL HYPE** | `Social Media` | High-engagement Instagram carousels, feed design systems, visual rhythm |
-| **Buona Notte Hostel** | `Branding & Design` | Hospitality identity, physical signage, environmental design |
+| **[bidbento.lol](https://bidbento.lol)** | `Software & Produto` | Plataforma de leilão em tempo real, Next.js 15 App Router, FastAPI backend, PostgreSQL, WebSockets ao vivo e mascote animado em loop. |
+| **INTERFUSÃO** | `Web Design & React` | Plataforma institucional para multinacional de mineração, com mapa 3D dotted matrix interativo de presença global em 5 continentes. |
+| **Clínica Muricy** | `Web Design & React` | Interface de autoridade médica, design system com paleta cirúrgica e alta densidade de conversão. |
+| **NERDY CLOTHING** | `Branding & Design` | Apresentação contínua sem emendas (*seamless strip*) com 17 pranchas visuais e tipografia urbana autoral. |
+| **Djasco Headshop** | `Branding & Design` | Galeria em Bento Grid equilibrada, design de embalagens, linha de vestuário e identidade lifestyle. |
+| **SOCIAL HYPE** | `Social Media` | Sistema visual para carrosséis de alto engajamento no Instagram com grid editorial. |
+| **Buona Notte Hostel** | `Branding & Design` | Identidade visual de hospitalidade, sinalização ambiental e aplicações físicas. |
 
 ---
 
-## ⚡ Tech Stack & Toolchain
+## 🛡️ Performance & Segurança de Borda (Cloudflare Edge)
+
+O projeto foi construído para atingir pontuação máxima em Core Web Vitals e conformidade estrita de segurança:
 
 ```
-├── Framework: Next.js 16 (Turbopack) / React 19
-├── Styling: Tailwind CSS 4 (Custom Wealth Check Dark-Teal Design Tokens)
-├── Animation & Canvas: HTML5 Canvas, Framer Motion, CSS Grid Fluid Accordions
-├── Typography: Geist Sans & Geist Mono
-├── Forms & Delivery: Asynchronous Client POST with direct Gmail integration
-├── Deployment: Cloudflare Pages (100% Edge Static HTML Export)
-└── MCP Tooling: Cloudflare MCP Servers & Agents SDK Integration
+┌─ BENCHMARK DE PRODUÇÃO ───────────────────────────────────────────────────────────┐
+│                                                                                    │
+│  ⚡ Latência de Borda (TTFB): 9ms (Anycast Cloudflare Edge via GRU / São Paulo)    │
+│  ⚡ Protocolo: HTTP/3 (QUIC) sobre TLS 1.3                                         │
+│  ⚡ Otimização de Assets: 156 imagens em WebP (Economia de mais de 66 MB)          │
+│  ⚡ Caching Imutável: Cache-Control public, max-age=31536000, immutable            │
+│  ⚡ Segurança: HSTS (1 ano), CSP, X-Frame-Options SAMEORIGIN, Permissions-Policy   │
+│                                                                                    │
+└────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🚀 Local Development
+## 🛠️ Instalação & Execução Local
 
-### 1. Clone the repository
 ```bash
+# 1. Clonar o repositório
 git clone https://github.com/victorgrcabral/devgotfrid_portfolio.git
 cd devgotfrid_portfolio
-```
 
-### 2. Install dependencies
-```bash
+# 2. Instalar dependências
 npm install
-```
 
-### 3. Run development server
-```bash
+# 3. Iniciar servidor de desenvolvimento local
 npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Acesse http://localhost:3000
 
-### 4. Build for static production (Cloudflare Pages)
-```bash
+# 4. Build de exportação estática (Cloudflare Pages)
 npm run build
+# Gera a pasta /out 100% estática pronta para deploy
 ```
-Generates the pre-rendered static output in the `/out` directory.
 
 ---
 
-## 📬 Contact & Socials
-
-- **Website**: [victorgotfrid.com](https://victorgotfrid.com)
-- **LinkedIn**: [linkedin.com/in/victorgrcabral](https://linkedin.com/in/victorgrcabral)
-- **GitHub**: [github.com/victorgrcabral](https://github.com/victorgrcabral)
-- **E-mail**: [victorgrcabral@gmail.com](mailto:victorgrcabral@gmail.com)
-
----
+## 📬 Conexões & Contato
 
 <div align="center">
-  <sub>Designed & Developed by Victor Gotfrid • © 2026</sub>
+
+[![Website](https://img.shields.io/badge/victorgotfrid.com-05181D?style=for-the-badge&logo=googlechrome&logoColor=73D1E0&labelColor=082229)](https://victorgotfrid.com)
+[![LinkedIn](https://img.shields.io/badge/victorgrcabral-05181D?style=for-the-badge&logo=linkedin&logoColor=73D1E0&labelColor=082229)](https://linkedin.com/in/victorgrcabral)
+[![GitHub](https://img.shields.io/badge/victorgrcabral-05181D?style=for-the-badge&logo=github&logoColor=73D1E0&labelColor=082229)](https://github.com/victorgrcabral)
+[![Email](https://img.shields.io/badge/victorgrcabral@gmail.com-05181D?style=for-the-badge&logo=gmail&logoColor=73D1E0&labelColor=082229)](mailto:victorgrcabral@gmail.com)
+
+<sub>Desenvolvido com precisão artesanal por **Victor Gotfrid** • 2026</sub>
+
 </div>
