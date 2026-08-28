@@ -1,0 +1,6 @@
+# RFC 9116 Security Disclosure Policy for victorgotfrid.com
+Contact: mailto:victorgrcabral@gmail.com
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: pt, en
+Canonical: https://victorgotfrid.com/.well-known/security.txt
+Policy: https://victorgotfrid.com
