@@ -20,16 +20,11 @@ export default function HeroSection({ dict, lang }: HeroSectionProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           {/* Left Column: Persona, Bio, Stack & CTAs (7 cols) */}
           <div className="lg:col-span-7 space-y-6">
-            {/* Availability Badge & Location Pill */}
+            {/* Availability Badge */}
             <div className="flex flex-wrap items-center gap-3">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-[#73D1E0]/10 border border-[#73D1E0]/30 text-[#73D1E0] shadow-sm">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>{dict.profile.availabilityBadge}</span>
-              </div>
-
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono bg-[#082229]/80 border border-[#003338] text-[#8EACB4]">
-                <MapPin className="w-3.5 h-3.5 text-[#358A90]" />
-                <span>{dict.profile.location}</span>
               </div>
             </div>
 
@@ -47,10 +42,6 @@ export default function HeroSection({ dict, lang }: HeroSectionProps) {
 
               <p className="text-base sm:text-lg text-[#8EACB4] font-normal leading-relaxed">
                 {dict.hero.subtitle}
-              </p>
-
-              <p className="text-xs sm:text-sm text-[#5C7B83] leading-relaxed max-w-2xl">
-                {dict.profile.heroBio}
               </p>
             </div>
 
@@ -140,7 +131,7 @@ export default function HeroSection({ dict, lang }: HeroSectionProps) {
                   </span>
                 </div>
                 <span className="px-2.5 py-0.5 rounded text-[10px] font-mono text-[#73D1E0] bg-[#73D1E0]/10 border border-[#73D1E0]/30">
-                  Mackenzie • Senac
+                  Full-stack Design Engineer
                 </span>
               </div>
 

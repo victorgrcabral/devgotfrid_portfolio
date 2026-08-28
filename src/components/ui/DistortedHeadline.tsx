@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useMemo } from 'react';
 
 interface DistortedHeadlineProps {
   text: string;
@@ -19,7 +19,8 @@ export default function DistortedHeadline({
   const [offsets, setOffsets] = useState<Array<{ x: number; y: number; rotate: number }>>([]);
   const animFrameRef = useRef<number | null>(null);
 
-  const words = text.split(' ');
+  const words = useMemo(() => text.split(' '), [text]);
+  const totalLetters = useMemo(() => words.reduce((acc, word) => acc + word.length, 0), [words]);
   const Tag = as;
 
   useEffect(() => {
@@ -103,7 +104,7 @@ export default function DistortedHeadline({
   return (
     <Tag
       ref={containerRef}
-      className={`font-bold tracking-tight text-white leading-[1.14] select-none cursor-default ${className}`}
+      className={`font-heading font-bold tracking-tight text-white leading-[1.14] select-none cursor-default ${className}`}
     >
       <span className={`flex flex-wrap items-center ${alignClass} gap-x-[0.3em] gap-y-1`}>
         {words.map((word, wIdx) => {
@@ -116,16 +117,22 @@ export default function DistortedHeadline({
                 const offset = offsets[currentIdx] || { x: 0, y: 0, rotate: 0 };
                 const isDistorted = offset.x !== 0 || offset.y !== 0;
 
+                // Smooth linear continuous gradient from White #FFFFFF to Soft Slate #8EACB4
+                const t = totalLetters > 1 ? currentIdx / (totalLetters - 1) : 0;
+                const r = Math.round(255 - t * (255 - 142));
+                const g = Math.round(255 - t * (255 - 172));
+                const b = Math.round(255 - t * (255 - 180));
+                const continuousColor = `rgb(${r}, ${g}, ${b})`;
+
                 return (
                   <span
                     key={cIdx}
-                    className={`distort-letter inline-block transition-transform duration-100 ease-out ${
-                      isDistorted
-                        ? 'text-[#73D1E0] drop-shadow-[0_0_12px_rgba(115,209,224,0.6)]'
-                        : 'bg-gradient-to-r from-white via-[#F7F7F8] to-[#8EACB4] bg-clip-text text-transparent'
+                    className={`distort-letter inline-block transition-transform duration-100 ease-out font-heading ${
+                      isDistorted ? 'drop-shadow-[0_0_12px_rgba(115,209,224,0.7)]' : ''
                     }`}
                     style={{
                       transform: `translate3d(${offset.x.toFixed(2)}px, ${offset.y.toFixed(2)}px, 0) rotate(${offset.rotate.toFixed(2)}deg)`,
+                      color: isDistorted ? '#73D1E0' : continuousColor,
                       willChange: 'transform',
                     }}
                   >

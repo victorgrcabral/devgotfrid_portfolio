@@ -45,6 +45,16 @@ export default function Navbar({ dict, lang }: NavbarProps) {
     }
   };
 
+  const handleLogoClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (pathname === `/${lang}` || pathname === `/${lang}/` || pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      window.history.replaceState(null, '', `/${lang}`);
+    } else {
+      window.location.href = `/${lang}`;
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-200 ${
@@ -54,10 +64,10 @@ export default function Navbar({ dict, lang }: NavbarProps) {
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between">
-        {/* Brandmark / Persona — Links to top anchor (#about) */}
+        {/* Brandmark / Persona — Reloads/resets instantly to top */}
         <Link
-          href={`/${lang}#about`}
-          onClick={(e) => handleNavClick(e, '#about')}
+          href={`/${lang}`}
+          onClick={handleLogoClick}
           className="flex items-center gap-3 p-1.5 -ml-1.5 rounded-xl hover:bg-[#082229]/60 transition-colors group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#73D1E0]"
           title={dict.nav.about}
         >

@@ -36,9 +36,9 @@ export default function InteractiveBackground() {
     window.addEventListener('resize', handleResize);
 
     const SPACING = 38;
-    const FISHEYE_RADIUS = 220;
-    const FISHEYE_STRENGTH = 16;
-    const CENTER_FADE_RADIUS = 85;
+    const FISHEYE_RADIUS = 380;
+    const FISHEYE_STRENGTH = 38;
+    const CENTER_FADE_RADIUS = 110;
 
     let animId: number;
 
@@ -78,14 +78,14 @@ export default function InteractiveBackground() {
       };
 
       ctx.lineWidth = 1;
-      ctx.strokeStyle = 'rgba(115, 209, 224, 0.038)';
+      ctx.strokeStyle = 'rgba(115, 209, 224, 0.045)';
 
       // 1. Draw Vertical Distorted Lines
       for (let x = 0; x <= width + SPACING; x += SPACING) {
         ctx.beginPath();
         let started = false;
 
-        for (let y = 0; y <= height + SPACING; y += 12) {
+        for (let y = 0; y <= height + SPACING; y += 6) {
           const p = getDistortedPoint(x, y);
 
           if (!started) {
@@ -104,7 +104,7 @@ export default function InteractiveBackground() {
         ctx.beginPath();
         let started = false;
 
-        for (let x = 0; x <= width + SPACING; x += 12) {
+        for (let x = 0; x <= width + SPACING; x += 6) {
           const p = getDistortedPoint(x, y);
 
           if (!started) {
